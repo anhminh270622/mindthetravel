@@ -1,5 +1,5 @@
 import { Flex } from "antd";
-import styles from "./information.module.scss";
+import styles from "./Information.module.scss";
 interface InformationProps {
     tile?: string;
     description: string;
