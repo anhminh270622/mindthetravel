@@ -1,0 +1,84 @@
+$base-padding: 4px;
+
+@for $i from 1 through 10 {
+	// Tính toán padding
+	.p-#{$i} {
+		padding: $base-padding * $i;
+	}
+	.px-#{$i} {
+		padding: 0 $base-padding * $i;
+	}
+	.py-#{$i} {
+		padding: $base-padding * $i 0;
+	}
+	.pt-#{$i} {
+		padding-top: $base-padding * $i;
+	}
+	.pb-#{$i} {
+		padding-bottom: $base-padding * $i;
+	}
+	.pr-#{$i} {
+		padding-right: $base-padding * $i;
+	}
+	.pl-#{$i} {
+		padding-left: $base-padding * $i;
+	}
+
+	// Tính toán margin
+	.m-#{$i} {
+		margin: $base-padding * $i;
+	}
+	.mx-#{$i} {
+		margin: 0 $base-padding * $i;
+	}
+	.my-#{$i} {
+		margin: $base-padding * $i 0;
+	}
+	.mt-#{$i} {
+		margin-top: $base-padding * $i;
+	}
+	.mb-#{$i} {
+		margin-bottom: $base-padding * $i;
+	}
+	.mr-#{$i} {
+		margin-right: $base-padding * $i;
+	}
+	.ml-#{$i} {
+		margin-left: $base-padding * $i;
+	}
+
+	// Tính toán gap
+	.gap-#{$i} {
+		gap: $base-padding * $i;
+	}
+}
+.margin-global {
+	margin: 0 $base-padding * 50;
+}
+.flex {
+	display: flex;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.justify {
+	&-start {
+		justify-content: flex-start;
+	}
+	&-end {
+		justify-content: flex-end;
+	}
+	&-center {
+		justify-content: center;
+	}
+	&-between {
+		justify-content: space-between;
+	}
+	&-around {
+		justify-content: space-around;
+	}
+}

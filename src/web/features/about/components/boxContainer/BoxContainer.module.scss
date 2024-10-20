@@ -1,0 +1,26 @@
+.root {
+	padding-top: 20px;
+	margin: 0 200px;
+	img {
+		width: 100%;
+		// width: 300px;
+		// height: 300px;
+		border-radius: 50%;
+	}
+	.textContainer {
+		width: 50%;
+		h3 {
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+		p {
+			font-size: 14px;
+			line-height: 26px;
+			letter-spacing: 0;
+			font-weight: 300;
+			font-style: normal;
+			text-transform: none;   
+			color: #6c6965;
+		}
+	}
+}
