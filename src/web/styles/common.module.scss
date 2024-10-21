@@ -1,27 +1,27 @@
 $base-padding: 4px;
 
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
 	// Tính toán padding
 	.p-#{$i} {
-		padding: $base-padding * $i;
+		padding: $base-padding * $i !important;
 	}
 	.px-#{$i} {
-		padding: 0 $base-padding * $i;
+		padding: 0 $base-padding * $i !important;
 	}
 	.py-#{$i} {
-		padding: $base-padding * $i 0;
+		padding: $base-padding * $i 0 !important;
 	}
 	.pt-#{$i} {
-		padding-top: $base-padding * $i;
+		padding-top: $base-padding * $i !important;
 	}
 	.pb-#{$i} {
-		padding-bottom: $base-padding * $i;
+		padding-bottom: $base-padding * $i !important;
 	}
 	.pr-#{$i} {
-		padding-right: $base-padding * $i;
+		padding-right: $base-padding * $i !important;
 	}
 	.pl-#{$i} {
-		padding-left: $base-padding * $i;
+		padding-left: $base-padding * $i !important;
 	}
 
 	// Tính toán margin
@@ -81,4 +81,14 @@ $base-padding: 4px;
 	&-around {
 		justify-content: space-around;
 	}
+}
+.text-p,
+p {
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: none;
+	color: #6c6965;
 }

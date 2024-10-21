@@ -1,12 +1,12 @@
 .root {
 	width: 100%;
+	background-color: #1d1d1d !important;
 	.arrowBox {
 		height: 300px;
-		background-color: #1d1d1d !important;
 		color: #ffffff !important;
 		font-weight: 500;
-		padding: 0 200px;
-		border-top: 5px solid #f26a44;
+		width: 60%;
+		margin: 0 auto;
 		position: relative;
 	}
 

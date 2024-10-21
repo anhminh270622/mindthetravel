@@ -1,6 +1,7 @@
 .root {
 	padding-top: 20px;
-	margin: 0 200px;
+	width: 60%;
+	margin: 0 auto;
 	img {
 		width: 100%;
 		// width: 300px;
@@ -19,7 +20,7 @@
 			letter-spacing: 0;
 			font-weight: 300;
 			font-style: normal;
-			text-transform: none;   
+			text-transform: none;
 			color: #6c6965;
 		}
 	}

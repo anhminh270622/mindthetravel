@@ -1,7 +1,9 @@
 .root {
-	margin: 0 200px;
-	// height: 105px;
-
+	border-bottom: 5px solid #f26a44;
+	.header {
+		width: 60%;
+		margin: 0 auto;
+	}
 	.textHeader {
 		text-transform: uppercase;
 		font-size: 14px;
