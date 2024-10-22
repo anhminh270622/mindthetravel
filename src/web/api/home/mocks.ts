@@ -67,3 +67,122 @@ export const travelData = [
 		title: 'Step-by-Step Guide to Visiting Yangon: A 2-day Yangon Itinerary',
 	},
 ];
+
+export const popularDestinations = [
+	{
+		id: 1,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2020/03/backpacking-cyprus-travel-guide.jpg',
+	},
+	{
+		id: 2,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2020/03/backpacking-france-travel-guide.jpg',
+	},
+	{
+		id: 3,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2020/03/backpacking-Dominican-Republic-Travel-Guide.jpg',
+	},
+	{
+		id: 4,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2020/03/backpacking-United-States-Travel-Guide.jpg',
+	},
+];
+
+export const travelEasier = [
+	{
+		id: 1,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2020/03/travel-resources.jpg',
+		title: 'MY ULTIMATE LIST OF TRAVEL RESOURCES',
+		description:
+			'Presenting a compilation of my preferred travel resources that have maximized my flight experiences and accommodations (and continue to do so!). These top-notch information hubs on the internet have been invaluable resources in my travel endeavors.',
+	},
+	{
+		id: 2,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2020/03/overcome-the-fear-of-flying.jpg',
+		title: 'HOW TO OVERCOME A FEAR OF FLYING',
+		description:
+			'Are you plagued by a fear of flying that hinders your global adventures? Don’t let anxiety hold you back. Explore these tips to swiftly overcome your fear of flying and embark on your travel escapades!',
+	},
+	{
+		id: 3,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2024/03/Best-Things-To-Do-In-The-World.jpg',
+		title: 'TOP THINGS TO DO IN…',
+		description:
+			'Few experiences rival the thrill of exploring our vast world. Discover these enticing destinations that beckon your visit, offering a plethora of activities to engage in and sights to behold. Unleash your wanderlust and immerse yourself in the wonders that await you!',
+	},
+];
+
+export const startHere = [
+	{
+		id: 1,
+		image: 'https://mindthetravel.com/wp-content/uploads/2016/04/start.jpg',
+		title: 'Travel Inspiration',
+	},
+	{
+		id: 2,
+		image: 'https://mindthetravel.com/wp-content/uploads/2016/04/initial.jpg',
+		title: 'Before You Start',
+	},
+	{
+		id: 3,
+		image: 'https://mindthetravel.com/wp-content/uploads/2016/04/money.jpg',
+		title: 'Saving Money',
+	},
+	{
+		id: 4,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2016/05/How-to-travel-when-you-have-no-money-347x223.jpg',
+		title: 'How To Travel When You Have No Money',
+	},
+	{
+		id: 5,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2016/05/how-to-pick-a-travel-credit-card-347x223.jpg',
+		title: 'How To Pick A Travel Credit Card',
+	},
+	{
+		id: 6,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2016/05/how-to-buy-cheap-airfare-347x223.jpg',
+		title: 'How To Find Cheap Airfare',
+	},
+	{
+		id: 7,
+		image: 'https://mindthetravel.com/wp-content/uploads/2016/04/tickets.jpg',
+		title: 'Searching For Cheap Fight',
+	},
+	{
+		id: 8,
+		image: 'https://mindthetravel.com/wp-content/uploads/2016/04/tips.jpg',
+		title: 'Travel Tips',
+	},
+	{
+		id: 9,
+		image: 'https://mindthetravel.com/wp-content/uploads/2016/04/solo.jpg',
+		title: 'Family Travel Tips',
+	},
+	{
+		id: 10,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2015/01/travel-insurance-1-347x223.jpg',
+		title: 'How To Buy Good Travel Insurance',
+	},
+	{
+		id: 11,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2016/05/how-to-stay-healthy-on-the-road-347x223.jpg',
+		title: 'How To Stay Healthy On The Road',
+	},
+	{
+		id: 12,
+		image:
+			'https://mindthetravel.com/wp-content/uploads/2016/05/how-to-find-cheap-accommodation-347x223.jpg',
+		title: 'How To Find Cheap Accommodation',
+	},
+];

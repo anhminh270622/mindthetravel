@@ -14,15 +14,17 @@ const HeaderComponent = () => (
 	<div className={styles.root}>
 		<Flex justify="space-between" align="center" className={styles.header}>
 			<Flex justify="space-between">
-				<Image src="https://mindthetravel.com/wp-content/uploads/2016/05/Mind_The_Travel_final1.png" />
+				<Link to="/" >
+					<Image preview={false} src="https://mindthetravel.com/wp-content/uploads/2016/05/Mind_The_Travel_final1.png" />
+				</Link>
 			</Flex>
 			<Flex justify="space-between" className={styles.textHeader} gap={20}>
 				<ul className="gap-6 flex-center">
 					<Link to="/about-mind-the-travel" className="menu-item">
 						About
 					</Link>
-					<li className="menu-item">Start here</li>
-					<li className="menu-item">Contact</li>
+					<Link to="/start-here" className="menu-item">Start here</Link>
+					<Link to="/contact" className="menu-item">Contact</Link>
 					<li className="menu-item">Travel Destinations</li>
 					<li className="menu-item">Blog</li>
 				</ul>

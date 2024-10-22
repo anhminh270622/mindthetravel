@@ -1,0 +1,25 @@
+.root {
+	:global {
+		.ant-card {
+			background-color: #414a3b;
+			width: 260px;
+			border: none;
+			.ant-card-meta-title {
+				color: white !important;
+				white-space: normal;
+				overflow: visible;
+				color: #414b3a;
+				text-align: center;
+			}
+			.ant-card-meta-description {
+				font-size: 17px;
+				line-height: 26px;
+				letter-spacing: 0;
+				font-weight: 400;
+				font-style: normal;
+				text-transform: none;
+				color: #6c6965;
+			}
+		}
+	}
+}

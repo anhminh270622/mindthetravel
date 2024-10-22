@@ -32,6 +32,30 @@
 		.cardItem {
 			width: 60%;
 			margin: 0 auto;
+			padding: 20px 0;
+		}
+	}
+	.popularDestinations,
+	.travelEasier {
+		width: 60%;
+		margin: 0 auto;
+		.cardPopular,
+		.cardTravelEasier {
+			padding-top: 70px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	.travelEasier {
+		width: 70%;
+		.cardTravelEasier {
+			margin-top: 70px;
+			background-image: url(https://mindthetravel.com/wp-content/uploads/2016/04/pappern.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
 		}
 	}
 }

@@ -4,7 +4,7 @@ import styles from './CardItem.module.scss';
 interface CardItemProps {
 	image: string;
 	title: string;
-	by: string;
+	by?: string;
 	description: string;
 }
 export default function CardItem({

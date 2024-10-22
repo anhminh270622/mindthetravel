@@ -55,6 +55,10 @@ $base-padding: 4px;
 .margin-global {
 	margin: 0 $base-padding * 50;
 }
+.layout {
+	width: 60%;
+	margin: 0 auto;
+}
 .flex {
 	display: flex;
 }
@@ -83,7 +87,8 @@ $base-padding: 4px;
 	}
 }
 .text-p,
-p {
+p,
+span {
 	font-size: 14px;
 	line-height: 26px;
 	letter-spacing: 0;
@@ -91,4 +96,12 @@ p {
 	font-style: normal;
 	text-transform: none;
 	color: #6c6965;
+}
+.text-white {
+	color: #fff;
+}
+
+.bold {
+	font-weight: bold;
+	color: #6c6965 !important;
 }

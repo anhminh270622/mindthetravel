@@ -7,7 +7,11 @@ interface InformationProps {
 const Information = ({ tile, description }: InformationProps) => {
     return (
         <div className={styles.root}>
-            <Flex className={styles.arrowBox} align="center">
+            <Flex
+                className={styles.arrowBox}
+                align={tile ? "center" : "start"}
+                justify="center"
+                vertical>
                 <h3>{tile}</h3>
                 <p>{`MindTheTravel / ${description}`}</p>
             </Flex>
