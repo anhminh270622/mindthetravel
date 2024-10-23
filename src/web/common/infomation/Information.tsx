@@ -3,10 +3,11 @@ import styles from "./Information.module.scss";
 interface InformationProps {
     tile?: string;
     description: string;
+    image?: string;
 }
-const Information = ({ tile, description }: InformationProps) => {
+const Information = ({ tile, description, image }: InformationProps) => {
     return (
-        <div className={styles.root}>
+        <div className={styles.root} style={{ backgroundImage: `url(${image})` }}>
             <Flex
                 className={styles.arrowBox}
                 align={tile ? "center" : "start"}
