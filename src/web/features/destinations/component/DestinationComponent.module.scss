@@ -1,0 +1,36 @@
+.root {
+	background-color: white;
+	:global {
+		h1 {
+			text-transform: uppercase;
+			text-align: center;
+			color: #414b3a;
+		}
+		.ant-image {
+			width: 25%;
+            padding: 10px;
+		}
+	}
+	.titledContainer {
+		width: 60%;
+		margin: 0 auto;
+
+		.text {
+			background-image: url(https://mindthetravel.com/wp-content/uploads/2016/04/pappern.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding: 20px;
+			margin-bottom: 20px;
+			line-height: 26px;
+			letter-spacing: 0;
+			font-weight: 400;
+			color: #6c6965;
+		}
+	}
+	.imageContainer {
+        padding: 60px 0;
+		width: 60%;
+		margin: 0 auto;
+	}
+}

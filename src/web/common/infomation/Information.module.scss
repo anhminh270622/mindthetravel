@@ -10,10 +10,10 @@
 		letter-spacing: 1px;
 		text-transform: uppercase;
 	}
-	p{
+	p {
 		color: #fff !important;
 		font-weight: 500;
-		padding-top: 10px;	
+		padding-top: 10px;
 	}
 	.arrowBox {
 		height: 300px;
@@ -34,5 +34,11 @@
 		border-left: 60px solid transparent;
 		border-right: 60px solid transparent;
 		border-color: #ffffff transparent transparent transparent;
+	}
+	.backgroundImage {
+		background-image: url(https://mindthetravel.com/wp-content/uploads/2016/06/IMG_1503.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 }

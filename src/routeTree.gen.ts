@@ -12,6 +12,7 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as StartHereImport } from './routes/start-here'
+import { Route as DestinationsImport } from './routes/destinations'
 import { Route as ContactImport } from './routes/contact'
 import { Route as BlogImport } from './routes/blog'
 import { Route as AboutMindTheTravelImport } from './routes/about-mind-the-travel'
@@ -22,6 +23,12 @@ import { Route as IndexImport } from './routes/index'
 const StartHereRoute = StartHereImport.update({
   id: '/start-here',
   path: '/start-here',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const DestinationsRoute = DestinationsImport.update({
+  id: '/destinations',
+  path: '/destinations',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -81,6 +88,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactImport
       parentRoute: typeof rootRoute
     }
+    '/destinations': {
+      id: '/destinations'
+      path: '/destinations'
+      fullPath: '/destinations'
+      preLoaderRoute: typeof DestinationsImport
+      parentRoute: typeof rootRoute
+    }
     '/start-here': {
       id: '/start-here'
       path: '/start-here'
@@ -98,6 +112,7 @@ export interface FileRoutesByFullPath {
   '/about-mind-the-travel': typeof AboutMindTheTravelRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
+  '/destinations': typeof DestinationsRoute
   '/start-here': typeof StartHereRoute
 }
 
@@ -106,6 +121,7 @@ export interface FileRoutesByTo {
   '/about-mind-the-travel': typeof AboutMindTheTravelRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
+  '/destinations': typeof DestinationsRoute
   '/start-here': typeof StartHereRoute
 }
 
@@ -115,6 +131,7 @@ export interface FileRoutesById {
   '/about-mind-the-travel': typeof AboutMindTheTravelRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
+  '/destinations': typeof DestinationsRoute
   '/start-here': typeof StartHereRoute
 }
 
@@ -125,15 +142,23 @@ export interface FileRouteTypes {
     | '/about-mind-the-travel'
     | '/blog'
     | '/contact'
+    | '/destinations'
     | '/start-here'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about-mind-the-travel' | '/blog' | '/contact' | '/start-here'
+  to:
+    | '/'
+    | '/about-mind-the-travel'
+    | '/blog'
+    | '/contact'
+    | '/destinations'
+    | '/start-here'
   id:
     | '__root__'
     | '/'
     | '/about-mind-the-travel'
     | '/blog'
     | '/contact'
+    | '/destinations'
     | '/start-here'
   fileRoutesById: FileRoutesById
 }
@@ -143,6 +168,7 @@ export interface RootRouteChildren {
   AboutMindTheTravelRoute: typeof AboutMindTheTravelRoute
   BlogRoute: typeof BlogRoute
   ContactRoute: typeof ContactRoute
+  DestinationsRoute: typeof DestinationsRoute
   StartHereRoute: typeof StartHereRoute
 }
 
@@ -151,6 +177,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutMindTheTravelRoute: AboutMindTheTravelRoute,
   BlogRoute: BlogRoute,
   ContactRoute: ContactRoute,
+  DestinationsRoute: DestinationsRoute,
   StartHereRoute: StartHereRoute,
 }
 
@@ -170,6 +197,7 @@ export const routeTree = rootRoute
         "/about-mind-the-travel",
         "/blog",
         "/contact",
+        "/destinations",
         "/start-here"
       ]
     },
@@ -184,6 +212,9 @@ export const routeTree = rootRoute
     },
     "/contact": {
       "filePath": "contact.tsx"
+    },
+    "/destinations": {
+      "filePath": "destinations.tsx"
     },
     "/start-here": {
       "filePath": "start-here.tsx"

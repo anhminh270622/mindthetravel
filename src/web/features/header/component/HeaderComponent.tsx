@@ -25,7 +25,7 @@ const HeaderComponent = () => (
 					</Link>
 					<Link to="/start-here" className="menu-item">Start here</Link>
 					<Link to="/contact" className="menu-item">Contact</Link>
-					<Link className="menu-item">Travel Destinations</Link>
+					<Link to="/destinations" className="menu-item">Travel Destinations</Link>
 					<Link to="/blog" className="menu-item">Blog</Link>
 				</ul>
 				<Flex justify="space-between" gap="10px" align="center">
