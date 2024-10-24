@@ -20,8 +20,17 @@ a {
 ul li {
 	text-decoration: none;
 }
-
-h2 {
+h1 {
+	font-size: 36px;
+	line-height: 40px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #414b3a !important;
+}
+h2,
+h3 {
 	font-size: 36px;
 	line-height: 40px;
 	font-style: normal;

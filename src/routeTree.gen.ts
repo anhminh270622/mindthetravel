@@ -12,9 +12,14 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as StartHereImport } from './routes/start-here'
+import { Route as SoutheastAsiaTravelGuideImport } from './routes/southeast-asia-travel-guide'
+import { Route as SouthAmericaTravelGuideImport } from './routes/south-america-travel-guide'
+import { Route as NorthAmericaTravelGuideImport } from './routes/north-america-travel-guide'
+import { Route as EuropeTravelGuideImport } from './routes/europe-travel-guide'
 import { Route as DestinationsImport } from './routes/destinations'
 import { Route as ContactImport } from './routes/contact'
 import { Route as BlogImport } from './routes/blog'
+import { Route as AfricaTravelGuideImport } from './routes/africa-travel-guide'
 import { Route as AboutMindTheTravelImport } from './routes/about-mind-the-travel'
 import { Route as IndexImport } from './routes/index'
 
@@ -23,6 +28,30 @@ import { Route as IndexImport } from './routes/index'
 const StartHereRoute = StartHereImport.update({
   id: '/start-here',
   path: '/start-here',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const SoutheastAsiaTravelGuideRoute = SoutheastAsiaTravelGuideImport.update({
+  id: '/southeast-asia-travel-guide',
+  path: '/southeast-asia-travel-guide',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const SouthAmericaTravelGuideRoute = SouthAmericaTravelGuideImport.update({
+  id: '/south-america-travel-guide',
+  path: '/south-america-travel-guide',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const NorthAmericaTravelGuideRoute = NorthAmericaTravelGuideImport.update({
+  id: '/north-america-travel-guide',
+  path: '/north-america-travel-guide',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const EuropeTravelGuideRoute = EuropeTravelGuideImport.update({
+  id: '/europe-travel-guide',
+  path: '/europe-travel-guide',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -41,6 +70,12 @@ const ContactRoute = ContactImport.update({
 const BlogRoute = BlogImport.update({
   id: '/blog',
   path: '/blog',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const AfricaTravelGuideRoute = AfricaTravelGuideImport.update({
+  id: '/africa-travel-guide',
+  path: '/africa-travel-guide',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -74,6 +109,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutMindTheTravelImport
       parentRoute: typeof rootRoute
     }
+    '/africa-travel-guide': {
+      id: '/africa-travel-guide'
+      path: '/africa-travel-guide'
+      fullPath: '/africa-travel-guide'
+      preLoaderRoute: typeof AfricaTravelGuideImport
+      parentRoute: typeof rootRoute
+    }
     '/blog': {
       id: '/blog'
       path: '/blog'
@@ -95,6 +137,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DestinationsImport
       parentRoute: typeof rootRoute
     }
+    '/europe-travel-guide': {
+      id: '/europe-travel-guide'
+      path: '/europe-travel-guide'
+      fullPath: '/europe-travel-guide'
+      preLoaderRoute: typeof EuropeTravelGuideImport
+      parentRoute: typeof rootRoute
+    }
+    '/north-america-travel-guide': {
+      id: '/north-america-travel-guide'
+      path: '/north-america-travel-guide'
+      fullPath: '/north-america-travel-guide'
+      preLoaderRoute: typeof NorthAmericaTravelGuideImport
+      parentRoute: typeof rootRoute
+    }
+    '/south-america-travel-guide': {
+      id: '/south-america-travel-guide'
+      path: '/south-america-travel-guide'
+      fullPath: '/south-america-travel-guide'
+      preLoaderRoute: typeof SouthAmericaTravelGuideImport
+      parentRoute: typeof rootRoute
+    }
+    '/southeast-asia-travel-guide': {
+      id: '/southeast-asia-travel-guide'
+      path: '/southeast-asia-travel-guide'
+      fullPath: '/southeast-asia-travel-guide'
+      preLoaderRoute: typeof SoutheastAsiaTravelGuideImport
+      parentRoute: typeof rootRoute
+    }
     '/start-here': {
       id: '/start-here'
       path: '/start-here'
@@ -110,18 +180,28 @@ declare module '@tanstack/react-router' {
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about-mind-the-travel': typeof AboutMindTheTravelRoute
+  '/africa-travel-guide': typeof AfricaTravelGuideRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/destinations': typeof DestinationsRoute
+  '/europe-travel-guide': typeof EuropeTravelGuideRoute
+  '/north-america-travel-guide': typeof NorthAmericaTravelGuideRoute
+  '/south-america-travel-guide': typeof SouthAmericaTravelGuideRoute
+  '/southeast-asia-travel-guide': typeof SoutheastAsiaTravelGuideRoute
   '/start-here': typeof StartHereRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about-mind-the-travel': typeof AboutMindTheTravelRoute
+  '/africa-travel-guide': typeof AfricaTravelGuideRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/destinations': typeof DestinationsRoute
+  '/europe-travel-guide': typeof EuropeTravelGuideRoute
+  '/north-america-travel-guide': typeof NorthAmericaTravelGuideRoute
+  '/south-america-travel-guide': typeof SouthAmericaTravelGuideRoute
+  '/southeast-asia-travel-guide': typeof SoutheastAsiaTravelGuideRoute
   '/start-here': typeof StartHereRoute
 }
 
@@ -129,9 +209,14 @@ export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
   '/about-mind-the-travel': typeof AboutMindTheTravelRoute
+  '/africa-travel-guide': typeof AfricaTravelGuideRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
   '/destinations': typeof DestinationsRoute
+  '/europe-travel-guide': typeof EuropeTravelGuideRoute
+  '/north-america-travel-guide': typeof NorthAmericaTravelGuideRoute
+  '/south-america-travel-guide': typeof SouthAmericaTravelGuideRoute
+  '/southeast-asia-travel-guide': typeof SoutheastAsiaTravelGuideRoute
   '/start-here': typeof StartHereRoute
 }
 
@@ -140,25 +225,40 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about-mind-the-travel'
+    | '/africa-travel-guide'
     | '/blog'
     | '/contact'
     | '/destinations'
+    | '/europe-travel-guide'
+    | '/north-america-travel-guide'
+    | '/south-america-travel-guide'
+    | '/southeast-asia-travel-guide'
     | '/start-here'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about-mind-the-travel'
+    | '/africa-travel-guide'
     | '/blog'
     | '/contact'
     | '/destinations'
+    | '/europe-travel-guide'
+    | '/north-america-travel-guide'
+    | '/south-america-travel-guide'
+    | '/southeast-asia-travel-guide'
     | '/start-here'
   id:
     | '__root__'
     | '/'
     | '/about-mind-the-travel'
+    | '/africa-travel-guide'
     | '/blog'
     | '/contact'
     | '/destinations'
+    | '/europe-travel-guide'
+    | '/north-america-travel-guide'
+    | '/south-america-travel-guide'
+    | '/southeast-asia-travel-guide'
     | '/start-here'
   fileRoutesById: FileRoutesById
 }
@@ -166,18 +266,28 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutMindTheTravelRoute: typeof AboutMindTheTravelRoute
+  AfricaTravelGuideRoute: typeof AfricaTravelGuideRoute
   BlogRoute: typeof BlogRoute
   ContactRoute: typeof ContactRoute
   DestinationsRoute: typeof DestinationsRoute
+  EuropeTravelGuideRoute: typeof EuropeTravelGuideRoute
+  NorthAmericaTravelGuideRoute: typeof NorthAmericaTravelGuideRoute
+  SouthAmericaTravelGuideRoute: typeof SouthAmericaTravelGuideRoute
+  SoutheastAsiaTravelGuideRoute: typeof SoutheastAsiaTravelGuideRoute
   StartHereRoute: typeof StartHereRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutMindTheTravelRoute: AboutMindTheTravelRoute,
+  AfricaTravelGuideRoute: AfricaTravelGuideRoute,
   BlogRoute: BlogRoute,
   ContactRoute: ContactRoute,
   DestinationsRoute: DestinationsRoute,
+  EuropeTravelGuideRoute: EuropeTravelGuideRoute,
+  NorthAmericaTravelGuideRoute: NorthAmericaTravelGuideRoute,
+  SouthAmericaTravelGuideRoute: SouthAmericaTravelGuideRoute,
+  SoutheastAsiaTravelGuideRoute: SoutheastAsiaTravelGuideRoute,
   StartHereRoute: StartHereRoute,
 }
 
@@ -195,9 +305,14 @@ export const routeTree = rootRoute
       "children": [
         "/",
         "/about-mind-the-travel",
+        "/africa-travel-guide",
         "/blog",
         "/contact",
         "/destinations",
+        "/europe-travel-guide",
+        "/north-america-travel-guide",
+        "/south-america-travel-guide",
+        "/southeast-asia-travel-guide",
         "/start-here"
       ]
     },
@@ -207,6 +322,9 @@ export const routeTree = rootRoute
     "/about-mind-the-travel": {
       "filePath": "about-mind-the-travel.tsx"
     },
+    "/africa-travel-guide": {
+      "filePath": "africa-travel-guide.tsx"
+    },
     "/blog": {
       "filePath": "blog.tsx"
     },
@@ -215,6 +333,18 @@ export const routeTree = rootRoute
     },
     "/destinations": {
       "filePath": "destinations.tsx"
+    },
+    "/europe-travel-guide": {
+      "filePath": "europe-travel-guide.tsx"
+    },
+    "/north-america-travel-guide": {
+      "filePath": "north-america-travel-guide.tsx"
+    },
+    "/south-america-travel-guide": {
+      "filePath": "south-america-travel-guide.tsx"
+    },
+    "/southeast-asia-travel-guide": {
+      "filePath": "southeast-asia-travel-guide.tsx"
     },
     "/start-here": {
       "filePath": "start-here.tsx"

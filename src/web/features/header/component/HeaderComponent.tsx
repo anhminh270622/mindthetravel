@@ -32,9 +32,17 @@ const HeaderComponent = () => (
 					<Link to="/contact" className="menu-item">
 						Contact
 					</Link>
-					<Link to="/destinations" className="menu-item">
-						Travel Destinations
+					<Link className={`${styles.destinations} menu-item`}>
+						<Link to="/destinations">	Travel Destinations </Link>
+						<ul className={styles.menu}>
+							<Link to="/europe-travel-guide">EUROPE</Link>
+							<Link to="/southeast-asia-travel-guide">SE ASIA</Link>
+							<Link to="/north-america-travel-guide" >N-AMERICA</Link>
+							<Link to="/south-america-travel-guide">S-AMERICA</Link>
+							<Link to="/africa-travel-guide">AFRICA</Link>
+						</ul>
 					</Link>
+
 					<Link to="/blog" className="menu-item">
 						Blog
 					</Link>

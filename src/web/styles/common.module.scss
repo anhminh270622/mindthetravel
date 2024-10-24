@@ -26,25 +26,25 @@ $base-padding: 4px;
 
 	// Tính toán margin
 	.m-#{$i} {
-		margin: $base-padding * $i;
+		margin: $base-padding * $i !important;
 	}
 	.mx-#{$i} {
-		margin: 0 $base-padding * $i;
+		margin: 0 $base-padding * $i !important;
 	}
 	.my-#{$i} {
-		margin: $base-padding * $i 0;
+		margin: $base-padding * $i 0 !important;
 	}
 	.mt-#{$i} {
-		margin-top: $base-padding * $i;
+		margin-top: $base-padding * $i !important;
 	}
 	.mb-#{$i} {
-		margin-bottom: $base-padding * $i;
+		margin-bottom: $base-padding * $i !important;
 	}
 	.mr-#{$i} {
-		margin-right: $base-padding * $i;
+		margin-right: $base-padding * $i !important;
 	}
 	.ml-#{$i} {
-		margin-left: $base-padding * $i;
+		margin-left: $base-padding * $i !important;
 	}
 
 	// Tính toán gap
@@ -100,8 +100,23 @@ span {
 .text-white {
 	color: #fff;
 }
-
+.bg-white {
+	background-color: #fff;
+}
 .bold {
 	font-weight: bold;
 	color: #6c6965 !important;
+}
+.center {
+	text-align: center !important;
+}
+
+.hr {
+	width: 100%;
+	border-color: #b7b7b7;
+	border-bottom-width: 3px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-style: dashed;
+	padding-top: 30px;
 }

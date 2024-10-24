@@ -1,0 +1,33 @@
+.root {
+	background-color: white;
+	:global {
+		h1 {
+			color: #414b3a;
+		}
+		h3 {
+			color: #414b3a;
+		}
+		h1,
+		h3 {
+			text-transform: uppercase;
+		}
+		span {
+			padding-bottom: 20px;
+			color: #6c6965;
+		}
+	}
+	.content {
+		width: 60%;
+		margin: 0 auto;
+		padding-top: 44px;
+	}
+	.hr {
+		width: 100%;
+		border-color: #b7b7b7;
+		border-bottom-width: 3px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		border-style: dashed;
+		padding-top: 30px;
+	}
+}
