@@ -1,6 +1,6 @@
 .root {
 	border-bottom: 5px solid #f26a44;
-
+	background-color: white !important;
 	.global {
 		svg {
 			color: #ffffff !important;
@@ -24,7 +24,7 @@
 	}
 	.iconHeader {
 		position: fixed;
-		top: 66px;
+		top: 44px;
 		right: 100px;
 		span {
 			color: #ffffff !important;
