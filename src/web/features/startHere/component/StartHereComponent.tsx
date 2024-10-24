@@ -6,20 +6,22 @@ import { startHere } from '../../../api/home/mocks';
 import FeaturePost from '../../home/component/featurePost/FeaturePost';
 import styles from './StartHereComponent.module.scss';
 export default function StartHereComponent() {
-	return (
-		<div className={styles.root}>
-			<Information
-				tile="Start Planning Your Next Trip Here"
-				description="Start Planning Your Next Trip Here"
-			/>
-			<ContentText />
-			<Flex className={styles.cartStartHere}>
-				<Flex wrap justify="center" className="layout" gap={20}>
-					{startHere.map((item, index) => (
-						<FeaturePost key={index} {...item}  style={{width: '300px'}}/>
-					))}
-				</Flex>
-			</Flex>
-		</div>
-	);
+    return (
+        <div className={styles.root}>
+            <Information
+                tile="Start Planning Your Next Trip Here"
+                description="Start Planning Your Next Trip Here"
+            />
+            <ContentText />
+            <Flex className={styles.cartStartHere}>
+                <Flex justify="space-between" className={styles.cartItem} gap={20} wrap>
+                    {startHere.map((item, index) => (
+                        <div style={{ width: '30%', minHeight: "240px" }}>
+                            <FeaturePost key={index} {...item} />
+                        </div>
+                    ))}
+                </Flex>
+            </Flex>
+        </div>
+    );
 }
