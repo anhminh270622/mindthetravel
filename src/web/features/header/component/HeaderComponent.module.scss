@@ -1,17 +1,36 @@
 .root {
 	border-bottom: 5px solid #f26a44;
+
+	.global {
+		svg {
+			color: #ffffff !important;
+			font-size: 15px;
+		}
+	}
 	.header {
 		width: 60%;
 		margin: 0 auto;
+		height: 100px;
 	}
 	.textHeader {
 		text-transform: uppercase;
 		font-size: 14px;
 		background-color: transparent !important;
 		cursor: pointer;
-		a{
+		a {
 			font-weight: 500;
 			color: #414a3b !important;
+		}
+	}
+	.iconHeader {
+		position: fixed;
+		top: 66px;
+		right: 100px;
+		span {
+			color: #ffffff !important;
+			&:hover {
+				color: #414a3b !important;
+			}
 		}
 	}
 }

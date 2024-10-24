@@ -1,9 +1,33 @@
-:root {
+.root {
 	:global {
 		.ant-form-item {
-            margin-bottom: 5px !important;
+			margin-bottom: 5px !important;
 			.ant-form-item-label {
 				padding-bottom: 0 !important;
+			}
+			input,
+			textarea {
+				padding: 10px 17px;
+				border: 1px solid #a9aba4;
+				color: #6c6965;
+				border-radius: 0;
+			}
+		}
+		button {
+			background: white;
+			border: 2px solid #a6a7a3;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 43px;
+			height: 43px;
+			padding: 0 25px;
+			span {
+				color: #ffffff;
+			}
+			&:hover {
+				background-color: #414a3b !important;
+				border: 2px solid #a6a7a3 !important;
+				border-color: #414a3b;
 			}
 		}
 	}

@@ -19,9 +19,7 @@ export default function ContactForm() {
 				<TextArea rows={8} />
 			</Form.Item>
 			<Flex>
-				<Button type="primary" htmlType="submit">
-					SEND
-				</Button>
+				<Button className=''>SEND</Button>
 			</Flex>
 		</Form>
 	);

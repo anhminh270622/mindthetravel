@@ -8,7 +8,7 @@ export default function ContactComponent() {
 	return (
 		<div className={styles.root}>
 			<Information description="Contact" />
-			<Flex className="layout" vertical>
+			<Flex className={styles.containerContact} vertical>
 				<Flex vertical className={styles.textContainer}>
 					<Typography.Title level={1}>Contact</Typography.Title>
 					<Typography.Text>
