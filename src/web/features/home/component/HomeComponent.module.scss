@@ -30,10 +30,14 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		height: 700px;
 		.cardItem {
 			width: 60%;
 			margin: 0 auto;
 			padding: 20px 0;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
 		}
 	}
 	.popularDestinations,
@@ -42,7 +46,7 @@
 		margin: 0 auto;
 		.cardPopular,
 		.cardTravelEasier {
-			padding-top: 70px;
+			padding: 70px 20px 0 20px;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;

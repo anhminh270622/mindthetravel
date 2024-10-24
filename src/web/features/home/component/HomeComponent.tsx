@@ -1,7 +1,12 @@
 import { Button, Flex, Typography } from 'antd';
 import React from 'react';
 import CardItem from './cardItem/CardItem';
-import { homeData, popularDestinations, travelData, travelEasier } from '../../../api/home/mocks';
+import {
+	homeData,
+	popularDestinations,
+	travelData,
+	travelEasier,
+} from '../../../api/home/mocks';
 import styles from './HomeComponent.module.scss';
 import EmotionForm from '../../../common/infomation/emotionForm/EmotionForm';
 import BoxContainer from '../../../common/infomation/boxContainer/BoxContainer';
@@ -29,20 +34,21 @@ export default function HomeComponent() {
 				<Flex flex={3} gap={20} className={styles.featurePost} vertical>
 					<ButtonComponent title="FEATURED POSTS" btnText="GET MORE!" />
 					<Flex className={styles.cardFeaturePost}>
-						<Flex
-							wrap
-							justify="space-between"
-							gap={15}
-							className={styles.cardItem}
-						>
+						<div className={styles.cardItem}>
 							{travelData.map((item) => (
-								<FeaturePost key={item.id} {...item} />
+								<FeaturePost
+									key={item.id}
+									{...item}
+									style={{ maxHeight: '320px' }}
+								/>
 							))}
-						</Flex>
+						</div>
 					</Flex>
 				</Flex>
 				<Flex vertical className={styles.popularDestinations}>
-					<ButtonComponent title="POPULAR DESTINATIONS" btnText="EXPLORE THE WORLD!"
+					<ButtonComponent
+						title="POPULAR DESTINATIONS"
+						btnText="EXPLORE THE WORLD!"
 					/>
 					<Flex
 						wrap
@@ -56,13 +62,11 @@ export default function HomeComponent() {
 					</Flex>
 				</Flex>
 				<Flex vertical className={styles.travelEasier}>
-					<ButtonComponent title="TRAVELING IS EASIER THAN YOU THINK" btnText="HERE'S WHY!"
+					<ButtonComponent
+						title="TRAVELING IS EASIER THAN YOU THINK"
+						btnText="HERE'S WHY!"
 					/>
-					<Flex
-						vertical
-						gap={15}
-						className={styles.cardTravelEasier}
-					>
+					<Flex vertical gap={15} className={styles.cardTravelEasier}>
 						<Flex flex={3} gap={20}>
 							{travelEasier.map((item) => (
 								<CardItem key={item.id} {...item} />
@@ -71,7 +75,6 @@ export default function HomeComponent() {
 					</Flex>
 				</Flex>
 			</Flex>
-
 		</Flex>
 	);
 }
