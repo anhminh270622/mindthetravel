@@ -14,15 +14,9 @@ export default function StartHereComponent() {
 			/>
 			<ContentText />
 			<Flex className={styles.cartStartHere}>
-				<Flex
-					wrap
-					justify="center"
-					className="layout"
-					gap={20}
-					style={{ width: '100%' }}
-				>
+				<Flex wrap justify="center" className="layout" gap={20}>
 					{startHere.map((item, index) => (
-						<FeaturePost key={index} {...item} />
+						<FeaturePost key={index} {...item}  style={{width: '300px'}}/>
 					))}
 				</Flex>
 			</Flex>
