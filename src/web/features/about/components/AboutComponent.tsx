@@ -1,10 +1,10 @@
 import { Flex } from 'antd';
 import Information from '../../../common/infomation/Information';
-import BoxContainer from '../../../common/infomation/boxContainer/BoxContainer';
+import BoxContainer from '../../../common/boxContainer/BoxContainer';
 import ContentAuthor from './contentBox/ContentAuthor';
 import ContentMindTheTravel from './contentBox/ContentMindTheTravel';
 import styles from './AboutComponent.module.scss';
-import EmotionForm from '../../../common/infomation/emotionForm/EmotionForm';
+import EmotionForm from '../../../common/emotionForm/EmotionForm';
 const AboutComponent = () => (
 	<Flex vertical className={styles.root}>
 		<Information description="About Mind The Travel" />

@@ -95,10 +95,16 @@ span {
 	font-weight: 400;
 	font-style: normal;
 	text-transform: none;
-	color: #6c6965;
+	color: #6c6965 !important;
 }
 .text-white {
 	color: #fff;
+}
+.color-p {
+	color: #6c6965;
+}
+.color-h {
+	color: #414b3a !important;
 }
 .bg-white {
 	background-color: #fff;

@@ -1,0 +1,18 @@
+.root {
+	background-color: white !important;
+	:global {
+		h1 {
+			text-transform: uppercase;
+			text-align: center;
+			color: #414b3a;
+		}
+		h3 {
+			font-size: 20px;
+			color: #414b3a;
+		}
+		span {
+			padding-bottom: 20px;
+			color: #6c6965;
+		}
+	}
+}
