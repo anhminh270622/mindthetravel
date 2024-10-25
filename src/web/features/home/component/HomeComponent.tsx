@@ -13,6 +13,7 @@ import BoxContainer from '../../../common/infomation/boxContainer/BoxContainer';
 import ContentBlog from './contentBlog/ContentBlog';
 import FeaturePost from './featurePost/FeaturePost';
 import ButtonComponent from './buttonComponent/ButtonComponent';
+import { Link } from '@tanstack/react-router';
 export default function HomeComponent() {
 	return (
 		<Flex vertical className={styles.root} align="center">
@@ -23,7 +24,9 @@ export default function HomeComponent() {
 						<CardItem key={item.id} {...item} />
 					))}
 				</Flex>
-				<Button className="px-6">VISIT THE BLOG →</Button>
+				<Button className="px-6">
+					<Link to="/blog">VISIT THE BLOG →</Link>
+				</Button>
 			</Flex>
 			<EmotionForm />
 			<Flex vertical className={styles.boxContainer}>
@@ -32,7 +35,11 @@ export default function HomeComponent() {
 					children={<ContentBlog />}
 				/>
 				<Flex flex={3} gap={20} className={styles.featurePost} vertical>
-					<ButtonComponent title="FEATURED POSTS" btnText="GET MORE!" />
+					<ButtonComponent
+						title="FEATURED POSTS"
+						btnText="GET MORE!"
+						link="/blog"
+					/>
 					<Flex className={styles.cardFeaturePost}>
 						<div className={styles.cardItem}>
 							{travelData.map((item) => (
@@ -49,6 +56,7 @@ export default function HomeComponent() {
 					<ButtonComponent
 						title="POPULAR DESTINATIONS"
 						btnText="EXPLORE THE WORLD!"
+						link='/destinations'
 					/>
 					<Flex
 						wrap
@@ -65,6 +73,7 @@ export default function HomeComponent() {
 					<ButtonComponent
 						title="TRAVELING IS EASIER THAN YOU THINK"
 						btnText="HERE'S WHY!"
+						link="/start-here"
 					/>
 					<Flex vertical gap={15} className={styles.cardTravelEasier}>
 						<Flex flex={3} gap={20}>

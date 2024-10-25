@@ -1,6 +1,7 @@
 import { Button, Flex } from 'antd';
 import React from 'react';
 import styles from './ContentBlog.module.scss';
+import { Link } from '@tanstack/react-router';
 export default function ContentBlog() {
 	return (
 		<Flex vertical className={styles.root} align="center">
@@ -23,7 +24,9 @@ export default function ContentBlog() {
 				ordinary guy who’s on a mission to explore the world and show you how to
 				travel more for less.
 			</p>
-			<Button className="px-6">More About Ivan</Button>
+			<Button className="px-6">
+				<Link to="/about-mind-the-travel">MORE ABOUT IVAN</Link>
+			</Button>
 		</Flex>
 	);
 }
