@@ -28,7 +28,7 @@ export default function HomeComponent() {
 			<EmotionForm />
 			<Flex vertical className={styles.boxContainer}>
 				<BoxContainer
-					image="https://mindthetravel.com/wp-content/uploads/2020/01/Photo3-878x878.jpg"
+					image="../../../../../dist/assets/backgroundHome.jpg"
 					children={<ContentBlog />}
 				/>
 				<Flex flex={3} gap={20} className={styles.featurePost} vertical>
