@@ -8,8 +8,8 @@ import {
 	travelEasier,
 } from '../../../api/home/mocks';
 import styles from './HomeComponent.module.scss';
-import EmotionForm from '../../../common/infomation/emotionForm/EmotionForm';
-import BoxContainer from '../../../common/infomation/boxContainer/BoxContainer';
+import EmotionForm from '../../../common/emotionForm/EmotionForm';
+import BoxContainer from '../../../common/boxContainer/BoxContainer';
 import ContentBlog from './contentBlog/ContentBlog';
 import FeaturePost from './featurePost/FeaturePost';
 import ButtonComponent from './buttonComponent/ButtonComponent';
@@ -24,9 +24,9 @@ export default function HomeComponent() {
 						<CardItem key={item.id} {...item} />
 					))}
 				</Flex>
-				<Button className="px-6">
-					<Link to="/blog">VISIT THE BLOG →</Link>
-				</Button>
+				<Link to="/blog">
+					<Button className="px-6">VISIT THE BLOG →</Button>
+				</Link>
 			</Flex>
 			<EmotionForm />
 			<Flex vertical className={styles.boxContainer}>
@@ -56,7 +56,7 @@ export default function HomeComponent() {
 					<ButtonComponent
 						title="POPULAR DESTINATIONS"
 						btnText="EXPLORE THE WORLD!"
-						link='/destinations'
+						link="/destinations"
 					/>
 					<Flex
 						wrap

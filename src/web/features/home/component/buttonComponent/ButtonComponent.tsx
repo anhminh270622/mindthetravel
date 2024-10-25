@@ -17,9 +17,10 @@ export default function ButtonComponent({
 			<Typography.Title level={2} className="pb-0">
 				{title}
 			</Typography.Title>
-			<Button className="px-6">
-				<Link to={link}>{btnText}</Link>
-			</Button>
+
+			<Link to={link}>
+				<Button className="px-6">{btnText}</Button>
+			</Link>
 		</Flex>
 	);
 }

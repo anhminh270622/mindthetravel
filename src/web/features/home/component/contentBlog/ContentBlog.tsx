@@ -24,9 +24,10 @@ export default function ContentBlog() {
 				ordinary guy who’s on a mission to explore the world and show you how to
 				travel more for less.
 			</p>
-			<Button className="px-6">
-				<Link to="/about-mind-the-travel">MORE ABOUT IVAN</Link>
-			</Button>
+
+			<Link to="/about-mind-the-travel">
+				<Button className="px-6">MORE ABOUT IVAN</Button>
+			</Link>
 		</Flex>
 	);
 }
