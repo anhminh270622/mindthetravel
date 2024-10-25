@@ -8,7 +8,7 @@ export default function EuropeComponent() {
             <Information description="Europe Travel Guide: Things to Do On a Budget & Ways to Save Money" />
             <Flex vertical className={styles.content}>
                 <Flex vertical>
-                    <Typography.Title level={1}>Europe Travel Guide: Things to Do On a Budget & Ways to Save Money
+                    <Typography.Title level={1} className='center'>Europe Travel Guide: Things to Do On a Budget & Ways to Save Money
                     </Typography.Title>
                     <Typography.Text>If you are planning a trip to Europe, it can be an overwhelming experience. Which destination to choose? How much will it cost? How many days should you allocate for Europe? With so many awe-inspiring castles, ancient cathedrals, beautiful architecture, fascinating history, and art, Europe is a great place to start your travels. Since I get so many emails from folks who want advice planning a trip to Europe, I’ve put together the Europe travel guide revealing things to do on a budget, safety travel tips and ways to save money.</Typography.Text>
                     <Typography.Text>Backpacking Europe is obviously not as cheap as traveling in Southeast Asia, however, you will find all of Europe to be super diverse, easy to navigate, and safe. From Barcelona, Prague, and Budapest, Hungary to Moscow, there are a lot of destinations in Europe for backpackers and budget travelers. With a few travel tips for backpacking Europe up your sleeve, you can really get the most out of your trip to Europe without spending a lot of money.</Typography.Text>

@@ -8,7 +8,7 @@ export default function SoutheastAsiaComponent() {
             <Information description="Southeast Asia Backpacking Guide: Itinerary, Travel Advice, Costs" />
             <Flex vertical className='layout pt-10'>
                 <Flex vertical>
-                    <Typography.Title level={1}>Southeast Asia Backpacking Guide</Typography.Title>
+                    <Typography.Title className='center' level={1}>Southeast Asia Backpacking Guide</Typography.Title>
                     <Typography.Text>
                         Southeast Asia is home to some of the world’s most amazing places most travelers never heard of. From the Bukal Island, El Nido in the Philippines to the Chicken Island off the coast of Ao Nang, you’ll find cultural diversity, perfect weather, scenery, and a thriving backpacker scene. I know picking your next backpacking destination in Southeast Asia can be a daunting task. That is why I put together a Southeast Asia backpacking guide with suggested daily budgets, packing list, and budget savvy tips.
                     </Typography.Text>
