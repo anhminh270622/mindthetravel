@@ -31,7 +31,7 @@ export default function HomeComponent() {
 			<EmotionForm />
 			<Flex vertical className={styles.boxContainer}>
 				<BoxContainer
-					image="../../../../../dist/assets/backgroundHome.jpg"
+					image="/assets/backgroundHome.jpg"
 					children={<ContentBlog />}
 				/>
 				<Flex flex={3} gap={20} className={styles.featurePost} vertical>
