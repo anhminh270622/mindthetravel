@@ -1,13 +1,14 @@
 .root {
 	background-color: white;
 	:global {
-		h1 {
+		h2 {
 			color: #414b3a;
 		}
 		h3 {
 			color: #414b3a;
+			margin-bottom: 0 !important;
 		}
-		h1,
+		h2,
 		h3 {
 			text-transform: uppercase;
 		}
@@ -15,9 +16,13 @@
 			padding-bottom: 20px;
 			color: #6c6965;
 		}
+		a {
+			color: #414b3a;
+			font-weight: bold;
+		}
 	}
 	.content {
-		width: 60%;
+		width: 70%;
 		margin: 0 auto;
 		padding-top: 44px;
 	}

@@ -3,24 +3,35 @@
 	padding: 30px 0;
 	:global {
 		h2 {
+			color: #333 !important;
 			&:hover {
 				text-decoration: underline;
 				cursor: pointer;
 				color: #94907b;
 			}
 		}
-		p {
+		p,
+		a {
 			border-right: 1px dotted #74797b;
 			padding: 0 10px;
 			font-size: 11px;
 			line-height: 1.5em;
 			vertical-align: top;
 			margin: 0 0 30px;
+			color: #414a3b !important;
 			&:last-child {
 				border-right: none;
 			}
 			&:first-child {
 				padding-left: 0;
+			}
+			&:hover {
+				color: #414a3b;
+			}
+		}
+		a {
+			&:hover {
+				cursor: pointer;
 			}
 		}
 		button {
@@ -29,6 +40,7 @@
 			line-height: 38px;
 			padding: 0 24px;
 			border: 2px solid #a6a7a3;
+			border-radius: 0;
 			span {
 				font-size: 10px;
 				color: rgba(65, 74, 59, 0.7);

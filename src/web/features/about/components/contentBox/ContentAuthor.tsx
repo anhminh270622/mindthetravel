@@ -31,7 +31,7 @@ export default function ContentAuthor() {
                 My career as an archivist came to an end, and I began learning new disciplines that I believed would enable me to travel full-time while managing this website, spending 5 to 6 months on the road.
             </p>
             <p>
-                Eventually, I embarked on my first solo trip to <b>Cyprus, </b>which significantly altered my perspective on traveling.
+                Eventually, I embarked on my first solo trip to <b className="bold">Cyprus, </b>which significantly altered my perspective on traveling.
             </p>
         </div>
     )

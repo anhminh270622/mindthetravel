@@ -7,14 +7,14 @@ export default function ContentBlog() {
 		<Flex vertical className={styles.root} align="center">
 			<h2>About Mind The Travel Blog</h2>
 			<p>
-				<b>Howdy!</b>I’m Ivan and welcome to adventure travel and photography
-				blog <b>Mind The Travel!</b> Deciding the traditional “9-5 career” was
+				<span className="bold">Howdy!</span > I’m Ivan and welcome to adventure travel and photography
+				blog <span className="bold">Mind The Travel!</span> Deciding the traditional “9-5 career” was
 				not for me when I turned 23 I quit my job to travel the world and some
 				time later launched this blog to document my travels, and help you
 				optimize your travel experience and achieve your travel goals.
 			</p>
 			<p>
-				I’m originally from <b>Dresden</b> and I did my best to embrace the
+				I’m originally from <span className="bold">Dresden</span> and I did my best to embrace the
 				minimalist travel mindset. I’ve lived in 5 different countries, love
 				learning new languages, and I’m an avid hiker. You’ll most likely find
 				me exploring nature’s wonders, hanging out at the sandy beaches, or

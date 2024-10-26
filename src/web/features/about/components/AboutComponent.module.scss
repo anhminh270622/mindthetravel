@@ -1,7 +1,21 @@
 .root {
 	background-color: #ffff;
-	svg {
-		width: 64px;
-		height: 64px;
+	:global {
+		.anticon-facebook {
+			color: #3b5998 !important;
+		}
+		.anticon-twitter {
+			color: #55acee !important;
+		}
+		.anticon-pinterest {
+			color: #9f1121 !important;
+		}
+		.anticon-instagram {
+			color: #ce6448 !important;
+		}
+		svg {
+			width: 64px;
+			height: 64px;
+		}
 	}
 }

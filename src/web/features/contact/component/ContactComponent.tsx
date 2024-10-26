@@ -13,10 +13,10 @@ export default function ContactComponent() {
 					<Typography.Title level={1}>Contact</Typography.Title>
 					<Typography.Text>
 						Please note, I don’t accept guest posts and link insertions on my
-						website. For other types of collaboration, visit this{' '}
-						<a href="https://mindthetravel.com/advertisepr/" className="bold">
+						website. For other types of collaboration, visit this
+						<a  href="https://mindthetravel.com/advertisepr/" className="pl-1 bold">
 							page
-						</a>{' '}
+						</a>
 					</Typography.Text>
 					<Typography.Text>
 						I won’t respond if you offer me guest posting or link insertion.
@@ -26,11 +26,11 @@ export default function ContactComponent() {
 						contact me directly. It might take a while to respond your letters,
 						but be sure to hear from me anyway. If you are looking for the new
 						piece of travel information see this pages
-						<a href="https://mindthetravel.com/advertisepr/" className="bold">
+						<a href="https://mindthetravel.com/advertisepr/" className="px-1 bold">
 							Travel tips
 						</a>
 						and
-						<a href="https://mindthetravel.com/destinations/" className="bold">
+						<a href="https://mindthetravel.com/destinations/" className="pl-1 bold">
 							Travel Guides.
 						</a>
 					</Typography.Text>
@@ -40,7 +40,7 @@ export default function ContactComponent() {
 					</Typography.Text>
 				</Flex>
 				<Flex className={styles.form}>
-					<Typography.Title level={1} className="pt-5">
+					<Typography.Title level={2} className="pt-5">
 						SEND ME A MESSAGE
 					</Typography.Title>
 				</Flex>

@@ -14,12 +14,11 @@ export default function ButtonComponent({
 }: ButtonComponentProps) {
 	return (
 		<Flex vertical align="center">
-			<Typography.Title level={2} className="pb-0">
+			<Typography.Title level={2} className="pb-0 mb-0">
 				{title}
 			</Typography.Title>
-
 			<Link to={link}>
-				<Button className="px-6">{btnText}</Button>
+				<Button style={{ color: '#222' }} className="px-6">{btnText}</Button>
 			</Link>
 		</Flex>
 	);

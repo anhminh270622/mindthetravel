@@ -1,16 +1,19 @@
 .root {
 	:global {
-		h4 {
-			color: #6d6d6d;
-			font-style: italic;
-		}
 		.by {
 			color: #6d6d6d;
 			font-size: 11px;
 			margin: 6px 0 0;
+			cursor: pointer;
 		}
 		.ant-image {
 			object-fit: cover;
 		}
+	}
+	.title {
+		color: #6d6d6d;
+		font-size: 19px !important;
+		// font-style: italic;
+		margin-top: 12px;
 	}
 }

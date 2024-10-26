@@ -31,10 +31,23 @@ export default function SouthAmericaComponent() {
 					</Typography.Text>{' '}
 					<Typography.Text className="pt-5">
 						There are countless beautiful places to explore and plenty of sights
-						that rival backpacking hotspots like Thailand and Vietnam. Аdd into
-						this the least expensive countries like Peru, Ecuador and Bolivia
-						and you have a great backpacking destination. It may easily take up
-						to several months in itself. Because it’s a continent where
+						that rival backpacking hotspots like{' '}
+						<a
+							href="https://mindthetravel.com/thailand-itinerary-for-two-weeks/"
+							className="bold"
+						>
+							Thailand
+						</a>{' '}
+						and{' '}
+						<a
+							href="https://mindthetravel.com/vietnam-travel-tips/"
+							className="bold"
+						>
+							Vietnam
+						</a>
+						. Аdd into this the least expensive countries like Peru, Ecuador and
+						Bolivia and you have a great backpacking destination. It may easily
+						take up to several months in itself. Because it’s a continent where
 						travelers tend to get lost, especially if they get drawn into
 						hiking, trekking and experiencing the one-of-a-kind landscape!
 					</Typography.Text>{' '}
@@ -76,8 +89,11 @@ export default function SouthAmericaComponent() {
 						Rainbow Mountains of Peru? The stunning beaches in Ecuador? Gorgeous
 						men or women? (Hey… Brazil and Argentina. I’m talking about you!)
 						Not only does South America have all of those things, but the
-						continent also has dozens of destinations that have each of those
-						things.
+						continent also has{' '}
+						<a href="https://mindthetravel.com/how-to-choose-a-travel-destination-things-to-consider/" className='bold'>
+							dozens of destinations
+						</a>{' '}
+						that have each of those things.
 					</Typography.Text>
 					<Typography.Text className="pt-5 pb-10">
 						Also, know that it’s extremely common for backpackers to travel solo

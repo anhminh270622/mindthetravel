@@ -1,10 +1,11 @@
 import { FacebookOutlined, InstagramOutlined, PinterestOutlined, TwitterOutlined } from '@ant-design/icons'
+import { Link } from '@tanstack/react-router'
 import { Flex } from 'antd'
 import React from 'react'
-
+import styles from './ContentMindTheTravel.module.scss'
 export default function ContentMindTheTravel() {
     return (
-        <div>
+        <div >
             <p className="pt-5">
                 I came up with the name of this blog after my trip to London. No, that doesn’t mean I’m here to discourage you from traveling the world.
             </p>
@@ -19,7 +20,7 @@ export default function ContentMindTheTravel() {
             <p>
                 I started the MindTheTravel blog to demonstrate that traveling on a budget doesn’t always mean staying in subpar accommodations with noisy roommates.
             </p>
-            <p><b>On my blog,</b> you will find comprehensive advice and practical travel tips on how to travel more while spending less.</p>
+            <p><Link to='/blog' target='_blank' className='bold'>On my blog,</Link> you will find comprehensive advice and practical travel tips on how to travel more while spending less.</p>
             <p>I will also emphasize the importance of environmental consciousness and the rewards of respecting other cultures, traditions, and people.</p>
             <p>Having embarked on various adventures, I decided to share my experiences and thoughts on travel with you.</p>
             <p>Mind The Travel blog aims to inspire those seeking to begin a long-term journey, break free from daily routines, and cultivate positive habits.</p>
@@ -27,19 +28,19 @@ export default function ContentMindTheTravel() {
             <h3 className="py-5">Where I Have Been</h3>
             <p>
                 I have travelled to 38 countries so far, including
-                <b>Thailand</b>, <b>Israel</b>, Serbia, <b>Indonesia</b>, Tunisia, Turkey,
-                <b>Greece</b>, <b>Italy</b>, <b>Spain</b>, <b>Cyprus</b>, <b>France</b>,
-                <b>Malta</b>, Portugal, Mexico, <b>Belgium</b>, <b>Denmark</b>,
-                <b>Australia</b>, UK, Russia, <b>Austria</b>,
-                <b>the Dominican Republic</b>, Poland, Montenegro, Vietnam, and
-                <b>the USA</b>.
+                <b className='bold'> Thailand</b>,  <b className='bold'>Israel</b>, Serbia,  <b className='bold'>Indonesia</b>, Tunisia, Turkey,
+                <b className='bold'> Greece</b>,  <b className='bold'>Italy</b>,  <b className='bold'>Spain</b>,  <b className='bold'>Cyprus</b>,  <b className='bold'>France</b>,
+                <b className='bold'> Malta</b>, Portugal, Mexico,  <b className='bold'>Belgium</b>,  <b className='bold'>Denmark</b>,
+                <b className='bold'> Australia</b>, UK, Russia,  <b className='bold'>Austria</b>,
+                <b className='bold'> the Dominican Republic</b>, Poland, Montenegro, Vietnam, and
+                <b className='bold'> the USA</b>.
             </p>
             <hr className='my-5' />
             <Flex>
-                <FacebookOutlined style={{ color: "#3B5998" }} />
-                <TwitterOutlined style={{ color: "#55ACEE" }} />
-                <PinterestOutlined style={{ color: '#9F1121' }} />
-                <InstagramOutlined style={{ color: '#CE6448' }} />
+                <FacebookOutlined />
+                <TwitterOutlined />
+                <PinterestOutlined />
+                <InstagramOutlined />
             </Flex>
             <p>Follow me here and on social media to learn how to become a savvy traveler, receive valuable travel tips, and access guides to destinations worldwide. Feel free to ask any questions!</p>
             <p>The optimal method to stay updated with new articles is by subscribing to my weekly newsletter. Rest assured, no spam—I promise!</p>

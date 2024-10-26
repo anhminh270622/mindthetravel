@@ -8,7 +8,7 @@ export default function EmotionForm() {
             <Form
                 layout="vertical"
             >
-                <Typography.Title level={3} className='pb-5'>SIGN UP FOR NEW EMOTIONS!</Typography.Title>
+                <Typography.Title level={3} className='pb-5 b'>SIGN UP FOR NEW EMOTIONS!</Typography.Title>
                 <Form.Item
                     label="Email Address *"
                 >

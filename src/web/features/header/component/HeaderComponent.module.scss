@@ -8,7 +8,7 @@
 		}
 	}
 	.header {
-		width: 60%;
+		width: 70%;
 		margin: 0 auto;
 		height: 100px;
 	}
@@ -17,10 +17,12 @@
 		font-size: 14px;
 		background-color: transparent !important;
 		cursor: pointer;
+		padding-right: 130px;
 		a {
-			font-weight: 500;
-			color: #414a3b !important;
+			font-weight: 400;
 			white-space: nowrap;
+			font-family: Oswald, sans-serif;
+			color: #222 !important;
 		}
 		.destinations {
 			position: relative;
@@ -39,17 +41,17 @@
 				display: none;
 				border: 1px solid #ededed;
 				padding: 0 0 10px 0;
-				width: 100%;
+				width: 140%;
 				font-size: 14px;
 				line-height: 35px;
-				font-weight: 400;
 				z-index: 1000;
 				border-top: 4px solid #414a3b;
 				margin-top: 40px;
 				a {
-					padding: 5px 10px;
-					color: #b5b5b5;
+					padding: 3px 10px;
+					color: #b5b5b5 !important;
 					opacity: 0.5;
+					font-weight: 400;
 					&:hover {
 						color: black !important;
 						opacity: 1;
@@ -67,7 +69,7 @@
 	.iconHeader {
 		position: fixed;
 		top: 44px;
-		right: 100px;
+		right: 15%;
 		span {
 			color: #ffffff !important;
 			&:hover {

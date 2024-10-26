@@ -4,7 +4,6 @@ import {
 	FacebookOutlined,
 	InstagramOutlined,
 	PinterestOutlined,
-	SearchOutlined,
 	TwitterOutlined,
 } from '@ant-design/icons';
 import styles from './HeaderComponent.module.scss';
@@ -13,7 +12,7 @@ import { Link } from '@tanstack/react-router';
 const HeaderComponent = () => (
 	<div className={styles.root}>
 		<Flex justify="space-between" align="center" className={styles.header}>
-			<Flex justify="space-between">
+			<Flex justify="space-between" >
 				<Link to="/">
 					<Image
 						preview={false}
@@ -21,8 +20,8 @@ const HeaderComponent = () => (
 					/>
 				</Link>
 			</Flex>
-			<Flex justify="space-between" className={styles.textHeader} gap={20}>
-				<ul className="gap-6 flex-center">
+			<Flex justify="space-between" className={styles.textHeader}>
+				<ul className="gap-10 flex-center">
 					<Link to="/about-mind-the-travel" className="menu-item">
 						About
 					</Link>
@@ -33,7 +32,7 @@ const HeaderComponent = () => (
 						Contact
 					</Link>
 					<Link className={`${styles.destinations} menu-item`}>
-						<Link to="/destinations">	Travel Destinations </Link>
+						<Link to="/destinations">Travel Destinations </Link>
 						<ul className={styles.menu}>
 							<Link to="/europe-travel-guide">EUROPE</Link>
 							<Link to="/southeast-asia-travel-guide">SE ASIA</Link>
@@ -52,7 +51,6 @@ const HeaderComponent = () => (
 					<TwitterOutlined />
 					<PinterestOutlined />
 					<InstagramOutlined />
-					{/* <SearchOutlined /> */}
 				</Flex>
 			</Flex>
 		</Flex>

@@ -4,6 +4,11 @@
 			margin-bottom: 5px !important;
 			.ant-form-item-label {
 				padding-bottom: 0 !important;
+				label {
+					color: #6c6965 !important;
+					font-weight: 400 !important;
+					font-family: Open-Sans, sans-serif !important;
+				}
 			}
 			input,
 			textarea {

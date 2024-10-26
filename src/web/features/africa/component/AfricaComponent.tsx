@@ -4,7 +4,7 @@ import { Flex, Image, Typography } from 'antd';
 
 export default function AfricaComponent() {
 	return (
-		<div className='bg-white'>
+		<div className="bg-white">
 			<Information description="Africa Travel Guide: Trip Highlights, Itineraries, and Tips" />
 			<Flex vertical className="layout">
 				<Flex vertical gap={20}>
@@ -51,7 +51,7 @@ export default function AfricaComponent() {
 				</Flex>
 				<span className="hr"></span>
 				<Flex vertical gap={20} className="pb-10">
-					<Typography.Title level={3} className="center color-h mb-0">
+					<Typography.Title level={3} className="center color-h mb-0 pt-12">
 						Where to Begin a Trip in Africa
 					</Typography.Title>
 					<Typography.Text>

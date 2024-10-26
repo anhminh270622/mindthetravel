@@ -20,24 +20,32 @@ a {
 ul li {
 	text-decoration: none;
 }
-h1 {
-	font-size: 36px;
-	line-height: 40px;
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	color: #414b3a !important;
-}
+h1,
 h2,
-h3 {
-	font-size: 36px;
-	line-height: 40px;
-	font-style: normal;
-	font-weight: 500;
-	letter-spacing: 1px;
+h3,
+h4 {
+	font-family: Oswald, sans-serif !important;
+	color: #414b3a !important;
 	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400 !important;
+	font-style: normal;
+}
+h1 {
+	font-size: 40px !important;
+	margin-bottom: 0 !important;
+	line-height: 45px;
+}
+h2 {
+	font-size: 36px !important;
+	line-height: 40px;
+}
+h3 {
+	font-size: 20px !important;
+	line-height: 28px;
 }
 h4 {
-	font-size: 19px;
+	font-size: 22px !important;
+	margin: 0 0 15px;
+	line-height: 30px;
 }
