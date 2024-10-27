@@ -13,7 +13,7 @@ export default function EuropeComponent() {
                     </Typography.Title>
                     <Typography.Text>
                         If you are planning a trip to Europe, it can be an overwhelming
-                        experience. Which
+                        experience. Which {''}
                         <a href="https://mindthetravel.com/how-to-choose-a-travel-destination-things-to-consider/">
                             destination to choose
                         </a>
@@ -22,8 +22,8 @@ export default function EuropeComponent() {
                         beautiful architecture, fascinating history, and art, Europe is a
                         great place to start your travels. Since I get so many emails from
                         folks who want advice planning a trip to Europe, I’ve put together
-                        the
-                        <a href="">Europe travel guide</a>
+                        the {''}
+                        <a href="">Europe travel guide</a> {''}
                         revealing things to do on a budget, safety travel tips and ways to
                         save money.
                     </Typography.Text>
@@ -64,7 +64,7 @@ export default function EuropeComponent() {
                         <a>Backpacking</a> Europe is a journey through different as diverse
                         as the world itself. Hit the <a href="">beach in Barcelona</a>. Get
                         to know the gorgeous architecture in Prague, Czech Republic. Explore
-                        the most beautiful
+                        the most beautiful {''}
                         <a href="https://mindthetravel.com/french-nature-reserves-and-national-parks/">
                             national parks in France
                         </a>
@@ -75,7 +75,7 @@ export default function EuropeComponent() {
                         Mozart.
                     </Typography.Text>
                     <Typography.Text>
-                        Experience life in one of Europe’s most exciting cities in Paris,
+                        Experience life in one of Europe’s most exciting cities in Paris,{''}
                         <a href="https://mindthetravel.com/backpacking-france-travel-guide-2/">
                             France.
                         </a>{' '}
