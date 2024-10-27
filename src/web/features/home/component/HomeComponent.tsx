@@ -20,7 +20,7 @@ export default function HomeComponent() {
 				<Typography.Title level={2}>RECENT POSTS</Typography.Title>
 				<Flex flex={3} gap={20}>
 					{homeData.map((item) => (
-						<CardItem key={item.id} {...item} />
+						<CardItem key={item.id} {...item} isMore/>
 					))}
 				</Flex>
 				<a href="/blog">
