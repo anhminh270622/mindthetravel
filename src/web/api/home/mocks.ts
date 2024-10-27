@@ -6,7 +6,7 @@ export const homeData = [
 		title: 'Best Day Trips from Salt Lake City, Utah: The Top 27 Options',
 		by: 'by MindTheTravel',
 		description:
-			'If you’re in search of the best day trips from Salt Lake City, I’ve curated a list of the 27 best day trips from Salt Lake City for you! &...',
+			'If you’re in search of the best day trips from Salt Lake City, I’ve curated a list of the 27 best day trips from Salt Lake City for you! & Salt Lake City, Utah’s capital, is a bustling city nestled against the majestic backdrop of the Wasatch Range',
 	},
 	{
 		id: 2,
@@ -16,7 +16,7 @@ export const homeData = [
 			'What to do in Salt Lake City in 48 Hours – 2-day Salt Lake City Itinerary',
 		by: 'by MindTheTravel',
 		description:
-			'As Utah’s capital and most populous city, SLC has undergone significant growth since my last visit and now boasts a wide array of attractions. W...',
+			'As Utah’s capital and most populous city, SLC has undergone significant growth since my last visit and now boasts a wide array of attractions. What I appreciate about Salt Lake City is the diversity of activities it offers. If you would like to explore its monuments and museums, this 2-day Salt Lake City itinerary will come in handy',
 	},
 	{
 		id: 3,
@@ -25,7 +25,7 @@ export const homeData = [
 		title: 'Best Day Trips from Denver, Colorado: The Top 20 Options',
 		by: 'by MindTheTravel',
 		description:
-			'Nestled amidst the stunning landscapes of Colorado, Denver serves as a gateway to a plethora of captivating day trip destinations that promise unforge...',
+			'Nestled amidst the stunning landscapes of Colorado, Denver serves as a gateway to a plethora of captivating day trip destinations that promise unforgettable experiences. From majestic mountains to charming historic towns, each excursion from the Mile High City unveils a unique facet of the region’s natural beauty ',
 	},
 ];
 
