@@ -1,4 +1,3 @@
-import { Link } from '@tanstack/react-router';
 import { Button, Flex, Typography } from 'antd';
 import React from 'react';
 
@@ -17,9 +16,9 @@ export default function ButtonComponent({
 			<Typography.Title level={2} className="pb-0 mb-0">
 				{title}
 			</Typography.Title>
-			<Link to={link}>
+			<a href={link}>
 				<Button style={{ color: '#222' }} className="px-6">{btnText}</Button>
-			</Link>
+			</a>
 		</Flex>
 	);
 }

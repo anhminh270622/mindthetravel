@@ -90,7 +90,10 @@ export default function SouthAmericaComponent() {
 						men or women? (Hey… Brazil and Argentina. I’m talking about you!)
 						Not only does South America have all of those things, but the
 						continent also has{' '}
-						<a href="https://mindthetravel.com/how-to-choose-a-travel-destination-things-to-consider/" className='bold'>
+						<a
+							href="https://mindthetravel.com/how-to-choose-a-travel-destination-things-to-consider/"
+							className="bold"
+						>
 							dozens of destinations
 						</a>{' '}
 						that have each of those things.

@@ -1,7 +1,5 @@
 import { Button, Flex, Image, Typography } from 'antd';
-import React from 'react';
 import styles from './CardContainer.module.scss';
-import { Link } from '@tanstack/react-router';
 
 interface CardContainerProps {
 	image: string;
@@ -29,10 +27,10 @@ export default function CardContainer({
 				<Flex>
 					<p>{date}</p>
 					<p>
-						<Link to='/blog'>{by}</Link>
+						<a href="/blog">{by}</a>
 					</p>
 					<p>
-						<Link to='/'>{blogIn}</Link>
+						<a href="/">{blogIn}</a>
 					</p>
 				</Flex>
 				<Typography.Text>{description}</Typography.Text>

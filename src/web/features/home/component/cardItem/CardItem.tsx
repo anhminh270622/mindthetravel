@@ -1,7 +1,5 @@
 import { Flex, Image, Typography } from 'antd';
-import React from 'react';
 import styles from './CardItem.module.scss';
-import { Link } from '@tanstack/react-router';
 interface CardItemProps {
 	image: string;
 	title: string;

@@ -13,7 +13,6 @@ import BoxContainer from '../../../common/boxContainer/BoxContainer';
 import ContentBlog from './contentBlog/ContentBlog';
 import FeaturePost from './featurePost/FeaturePost';
 import ButtonComponent from './buttonComponent/ButtonComponent';
-import { Link } from '@tanstack/react-router';
 export default function HomeComponent() {
 	return (
 		<Flex vertical className={styles.root} align="center">
@@ -24,9 +23,9 @@ export default function HomeComponent() {
 						<CardItem key={item.id} {...item} />
 					))}
 				</Flex>
-				<Link to="/blog">
+				<a href="/blog">
 					<Button className="px-6">VISIT THE BLOG →</Button>
-				</Link>
+				</a>
 			</Flex>
 			<EmotionForm />
 			<Flex vertical className={styles.boxContainer}>

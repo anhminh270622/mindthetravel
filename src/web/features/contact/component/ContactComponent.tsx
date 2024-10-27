@@ -14,7 +14,10 @@ export default function ContactComponent() {
 					<Typography.Text>
 						Please note, I don’t accept guest posts and link insertions on my
 						website. For other types of collaboration, visit this
-						<a  href="https://mindthetravel.com/advertisepr/" className="pl-1 bold">
+						<a
+							href="https://mindthetravel.com/advertisepr/"
+							className="pl-1 bold"
+						>
 							page
 						</a>
 					</Typography.Text>
@@ -26,11 +29,17 @@ export default function ContactComponent() {
 						contact me directly. It might take a while to respond your letters,
 						but be sure to hear from me anyway. If you are looking for the new
 						piece of travel information see this pages
-						<a href="https://mindthetravel.com/advertisepr/" className="px-1 bold">
+						<a
+							href="https://mindthetravel.com/advertisepr/"
+							className="px-1 bold"
+						>
 							Travel tips
 						</a>
 						and
-						<a href="https://mindthetravel.com/destinations/" className="pl-1 bold">
+						<a
+							href="https://mindthetravel.com/destinations/"
+							className="pl-1 bold"
+						>
 							Travel Guides.
 						</a>
 					</Typography.Text>

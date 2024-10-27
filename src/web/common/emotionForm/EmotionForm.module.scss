@@ -6,9 +6,12 @@
 	background-repeat: no-repeat;
 	width: 100%;
 	margin-bottom: 50px;
+	background-attachment: fixed;
+
 	:global {
 		.ant-form {
 			width: 40%;
+
 			h3 {
 				color: #414b3a;
 				font-size: 20px;
@@ -18,11 +21,13 @@
 				font-weight: 700;
 				text-align: center;
 			}
+
 			.ant-form-item-row {
-				.ant-form-item-label{
+				.ant-form-item-label {
 					text-align: center;
 					padding-bottom: 0;
 				}
+
 				input {
 					opacity: 0.3;
 					height: 34px;
@@ -31,6 +36,7 @@
 					line-height: 1.42857143;
 					color: #555;
 				}
+
 				label {
 					font-size: 14px;
 					line-height: 26px;
@@ -40,20 +46,24 @@
 					text-transform: none;
 					color: #6c6965 !important;
 				}
+
 				button {
 					padding: 6px 12px;
 					height: 38px;
 					cursor: pointer;
+
 					span {
 						color: white !important;
 					}
 				}
 			}
-			.ant-form-item-control-input{
+
+			.ant-form-item-control-input {
 				text-align: center;
 			}
 		}
 	}
+
 	.formContainer {
 		margin: 0 auto;
 	}
