@@ -1,8 +1,5 @@
-import React from 'react'
-import AboutComponent from '../components/AboutComponent'
+import AboutComponent from '../components/AboutComponent';
 
 export default function AboutScreen() {
-    return (
-        <AboutComponent />
-    )
+	return <AboutComponent />;
 }

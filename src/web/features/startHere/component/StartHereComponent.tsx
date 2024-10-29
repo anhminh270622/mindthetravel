@@ -22,7 +22,11 @@ export default function StartHereComponent() {
 								minHeight: '240px',
 							}}
 						>
-							<FeaturePost key={index} {...item} style={{ paddingBottom: '20px' }} />
+							<FeaturePost
+								key={index}
+								{...item}
+								style={{ paddingBottom: '20px' }}
+							/>
 						</div>
 					))}
 				</Flex>

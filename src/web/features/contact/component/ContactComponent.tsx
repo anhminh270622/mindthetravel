@@ -1,4 +1,3 @@
-import React from 'react';
 import Information from '../../../common/infomation/Information';
 import { Flex, Typography } from 'antd';
 import styles from './ContactComponent.module.scss';

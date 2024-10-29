@@ -1,5 +1,4 @@
 import { Flex, Pagination } from 'antd';
-import React from 'react';
 import styles from './BlogComponent.module.scss';
 import Information from '../../../common/infomation/Information';
 import CardContainer from './cardContainer/CardContainer';

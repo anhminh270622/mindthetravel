@@ -1,6 +1,5 @@
 import { Button, Flex, Form, Input } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
-import React from 'react';
 import styles from './ContactForm.module.scss';
 
 export default function ContactForm() {
@@ -19,7 +18,7 @@ export default function ContactForm() {
 				<TextArea rows={8} />
 			</Form.Item>
 			<Flex>
-				<Button className=''>SEND</Button>
+				<Button className="">SEND</Button>
 			</Flex>
 		</Form>
 	);

@@ -27,22 +27,29 @@ export default function CardItem({
 	return (
 		<Flex vertical className={styles.root} flex={1}>
 			<Image preview={false} src={image} />
-			<Typography.Text style={{ fontStyle: by && 'italic' }} className={styles.title}>
+			<Typography.Text
+				style={{ fontStyle: by && 'italic' }}
+				className={styles.title}
+			>
 				{title}
 			</Typography.Text>
-			<Typography.Text className={styles.by}>
-				{by}
-			</Typography.Text>
+			<Typography.Text className={styles.by}>{by}</Typography.Text>
 			<Typography.Text className={styles.description}>
-				{isMore ? (
-					isExpanded ? description : `${description.substring(0, maxChar)}... `
-				) : (
-					description
-				)}
+				{isMore
+					? isExpanded
+						? description
+						: `${description.substring(0, maxChar)}... `
+					: description}
 				{isMore && (
 					<div
 						onClick={toggleExpand}
-						style={{ color: 'black', cursor: 'pointer', fontWeight: '400', textAlign: 'right', marginRight: '10px' }}
+						style={{
+							color: 'black',
+							cursor: 'pointer',
+							fontWeight: '400',
+							textAlign: 'right',
+							marginRight: '10px',
+						}}
 					>
 						{isExpanded ? 'view less' : 'view more'}
 					</div>

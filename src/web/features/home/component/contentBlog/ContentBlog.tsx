@@ -1,5 +1,4 @@
 import { Button, Flex } from 'antd';
-import React from 'react';
 import styles from './ContentBlog.module.scss';
 export default function ContentBlog() {
 	return (

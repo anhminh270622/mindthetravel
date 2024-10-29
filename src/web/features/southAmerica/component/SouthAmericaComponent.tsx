@@ -1,5 +1,4 @@
 import { Flex, Image, Typography } from 'antd';
-import React from 'react';
 import Information from '../../../common/infomation/Information';
 
 export default function SouthAmericaComponent() {

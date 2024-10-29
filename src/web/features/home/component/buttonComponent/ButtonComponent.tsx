@@ -1,5 +1,4 @@
 import { Button, Flex, Typography } from 'antd';
-import React from 'react';
 
 interface ButtonComponentProps {
 	title: string;
@@ -17,7 +16,9 @@ export default function ButtonComponent({
 				{title}
 			</Typography.Title>
 			<a href={link}>
-				<Button style={{ color: '#222' }} className="px-6">{btnText}</Button>
+				<Button style={{ color: '#222' }} className="px-6">
+					{btnText}
+				</Button>
 			</a>
 		</Flex>
 	);
