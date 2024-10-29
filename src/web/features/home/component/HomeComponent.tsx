@@ -45,7 +45,7 @@ export default function HomeComponent() {
 								<FeaturePost
 									key={item.id}
 									{...item}
-									style={{ maxHeight: '320px' }}
+									style={{ maxHeight: '340px' }}
 								/>
 							))}
 						</div>
